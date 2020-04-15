@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Cool-Hoz</title>
+	<link rel="stylesheet" href="./css/index.css">
+	<link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,500,600,700&amp;subset=cyrillic" rel="stylesheet">
+</head>
+<body>
+
+	<main>
+		<section class="main-image_container">
+			
+			<img class="main-image" src="./img/mainImage.png" alt="Cool-Hoz">
+				
+			<div class='wrapper wrapper_baner'>
+				<header>
+					<div class="logo">
+						<img class="icon-logo" src="img/spray-gun(white).svg"/>
+						<p>
+							<span class="name-company">Cool-Hoz</span><br/>
+							<span class="services-company">Paint & Detailing</span>	
+						</p>
+					</div>
+
+					<nav class="nav">
+						<ul>
+							<li><a href="#services">СПЕКТР УСЛУГ</a></li>
+							<li><a href="#contact">КОНТАКТЫ</a></li>
+						</ul>
+					</nav>
+				</header>
+
+				<div class="main-text">
+					<h1>Paint &<br/>
+						Detailing<br/>
+						Cool-Hoz
+					</h1>
+				</div>
+
+			</div>
+
+		</section>
+
+		<section class="services" id="services">
+			<img class="services_background" src="img/background_info_section.jpg" />
+
+			<h2 class="services-heading">Спектр услуг</h2>
+
+			<ul class="services-list">
+				<li class="services-item">
+					<a class="services-item__button" onclick="openPopup(event)">- detailing мойка -</a>
+					<div class="modal-window-invisible">
+						<a class="modal-window_button-close" onclick="btnClosePopup()"><span>&#10006;</span></a>
+						<div class="services-item_container">
+							<!-- 
+								add: 
+								Image 
+								Header
+								Deskribe about service
+							 -->
+						</div>
+					</div>
+				</li>
+				<li class="services-item">
+					<a class="services-item__button" onclick="openPopup(event)">- защитные покрытия -</a>
+					<div class="modal-window-invisible">
+						<a class="modal-window_button-close" onclick="btnClosePopup()"><span>&#10006;</span></a>
+						<div class="services-item_container">
+							<!-- 
+								add: 
+								Image 
+								Header
+								Deskribe about service
+							 -->
+						</div>
+					</div>
+				</li>
+				<li class="services-item">
+					<a class="services-item__button">- антигравийная плёнка -</a>
+				</li>
+				<li class="services-item">
+					<a class="services-item__button">- покраска -</a>
+				</li>
+				<li class="services-item">
+					<a class="services-item__button">- химчистка -</a>
+				</li>
+				<li class="services-item">
+					<a class="services-item__button">- полировка -</a>
+				</li>
+			</ul>
+			
+		<!--  	<ul class="services-list">
+				<li class="services-item">
+					<div class="services-item_number">01</div>
+					<img src="img/inspection.png" />
+					<h3>Детейлинг</h3>
+					<a class="services-item__button_more-details" href="/">Подробнее</a>
+					 will make modal window when click on button more details  
+					<div class="modal-window">
+						<div class="services-item_container">
+		
+						</div>
+					</div>
+				</li>
+				<li class="services-item">
+					<div class="services-item_number">02</div>
+					<img src="img/polishing.png" />
+					<h3>Полировка</h3>
+					<a class="services-item__button_more-details" href="/">Подробнее</a>
+					 will make modal window when click on button more details  
+				</li>
+				<li class="services-item">
+					<div class="services-item_number">03</div>
+					<img src="img/painting.png" />
+					<h3>Покраска</h3>
+					<a class="services-item__button_more-details" href="/">Подробнее</a>
+					 will make modal window when click on button more details  
+				</li>
+			</ul>     -->
+
+
+		</section>
+		
+		<section class="partners">
+			<h2 class="partners-heading">Наши партнёры</h2>
+			<div class="partners-logotypes">
+				<a class="partners-logotypes_link"><img src="img/Meguiars-Logo.png" class="partners-logotypes_image" /></a>
+				<a class="partners-logotypes_link"><img src="img/Krytex-logo.jpg" class="partners-logotypes_image" /></a>
+			</div>
+		</section>
+
+		<section class="contact" id="contact">
+			<div class="contact-container">
+				<div class="contact-data">
+					<ul>
+						<li>
+							<h3>КОНТАКТЫ</h3>
+						</li>
+						<li>
+							<div class="name-column-contact">Адрес:</div>
+							<div class="value-column-contact">Третья улица 3, Харьков, Харьковская область, 61000</div>
+						</li>
+						<li>
+							<div class="name-column-contact">Телефон:</div>
+							<div class="value-column-contact">+38 (063) 137 08 05, +38 (095) 797 37 33</div>
+						</li>
+						<li>
+							<div class="name-column-contact">E-mail:</div>
+							<div class="value-column-contact">blablabla@gmail.com</div>
+						</li>
+						<li>
+							<div class="name-column-contact">Соц. сети:</div>
+							<div class="value-column-contact">
+								<a class="viber_link" href="https://www.viber.com/ru/">Viber</a>, 
+								<a class="instagram_link" href="https://www.instagram.com/cool_hoz/">Instagram</a>, 
+								<a class="telegram_link" href="https://telegram.org/">Telegram</a>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="map">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2567.10759755206!2d36.16008641610665!3d49.95308407940983!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x41279f841683d7a1%3A0xde024eac65dd151e!2zMy3RjyDRg9C7LiwgMywg0KXQsNGA0YzQutC-0LIsINCl0LDRgNGM0LrQvtCy0YHQutCw0Y8g0L7QsdC70LDRgdGC0YwsIDYxMDAw!5e0!3m2!1sru!2sua!4v1549741226442" frameborder="0" style="border:0" allowfullscreen></iframe>
+			</div>
+		</section>
+	</main>
+
+	<footer>
+		<div class="logo">
+			<img class="icon-logo" src="img/spray-gun(white).svg"/>
+			<p>
+				<span class="name-company">Cool-Hoz</span><br/>
+				<span class="services-company">Paint & Detailing</span>	
+			</p>
+		</div>
+
+		<div class="phone-number">
+			<img class="icon-phone" src="img/icon-phone.svg" />
+			<p>+38 <span class="yellow-number">(063)</span> 137 08 05</p>
+		</div>
+
+		<nav class="socials">
+			<ul>
+				<li><a href="https://www.viber.com/ru/"><img class="social-icon" src="img/socials_icons/viber.svg" alt="viber"/></a></li>
+				<li><a href="https://www.instagram.com/cool_hoz/"><img class="social-icon" src="img/socials_icons/instagram.svg" alt="instagram"/></a></li>
+				<li><a href="https://telegram.org/"><img class="social-icon" src="./img/socials_icons/telegram.svg" alt="telegram"/></a></li>
+			</ul>
+		</nav>
+	</footer>
+</body>
+
+<script type="text/javascript" src="js/modalWindowServices.js"></script>
+<script type="text/javascript" src="js/closeModalWindow.js"></script>
+</html>
