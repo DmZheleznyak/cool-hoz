@@ -104,11 +104,10 @@ main .main-image_container {
   main .main-image_container .main-image {
     width: 100%; }
   main .main-image_container .main-text {
-    margin: 2%;
-    margin-top: 11%; }
+    margin-top: 10%; }
     @media only screen and (max-width: 37.5em) {
       main .main-image_container .main-text {
-        margin-top: 5%; } }
+        margin-top: 8%; } }
     main .main-image_container .main-text h1 {
       color: white;
       font-size: 7em; }
@@ -293,7 +292,7 @@ main .contact {
         padding-bottom: 3em; } }
     @media only screen and (max-width: 56.25em) {
       main .contact .contact-container {
-        width: 56%; } }
+        width: 60%; } }
     @media only screen and (max-width: 37.5em) {
       main .contact .contact-container {
         width: 80%; } }
@@ -350,9 +349,6 @@ main .contact {
       main .contact .map {
         width: 50%; } }
     @media only screen and (max-width: 56.25em) {
-      main .contact .map {
-        width: 56%; } }
-    @media only screen and (max-width: 50em) {
       main .contact .map {
         width: 60%; } }
     @media only screen and (max-width: 37.5em) {
@@ -479,6 +475,7 @@ footer {
     font-size: 1.2em; }
     @media only screen and (max-width: 56.25em) {
       footer .phone-number {
+        width: 24%;
         font-size: 1em; } }
     @media only screen and (max-width: 37.5em) {
       footer .phone-number {
