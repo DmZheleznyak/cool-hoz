@@ -101,7 +101,7 @@ main .main-image_container {
   position: relative;
   width: 100%;
   margin-bottom: -2px;
-  background-color: goldenrod;
+  background-color: #333;
   background-image: url(../img/mainImage.png);
   background-size: cover;
   height: 90vh; }
@@ -155,7 +155,7 @@ main .main-image_container {
 
 main .services {
   position: relative;
-  padding-bottom: 80px; }
+  padding-bottom: 6rem; }
   @media only screen and (max-width: 37.5em) {
     main .services {
       padding-bottom: 36px; } }
@@ -168,8 +168,8 @@ main .services {
     z-index: -10; }
   main .services-heading {
     text-align: center;
-    padding-top: 60px;
-    padding-bottom: 30px;
+    padding-top: 7rem;
+    padding-bottom: 6rem;
     color: #EDEDED;
     font-size: 5em; }
     @media only screen and (max-width: 56.25em) {
@@ -191,7 +191,8 @@ main .services {
     color: #EDEDED; }
   main .services-item {
     position: relative;
-    text-align: center; }
+    text-align: center;
+    padding-bottom: 1.2rem; }
     main .services-item__button {
       text-decoration: none;
       color: #EDEDED;
@@ -249,6 +250,101 @@ main .services {
         width: 96%;
         background-color: white;
         color: black; }
+
+main .info {
+  position: relative;
+  background-color: #333;
+  color: #ddd;
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+  text-align: center; }
+  @media only screen and (max-width: 56.25em) {
+    main .info {
+      padding-top: 6rem;
+      padding-bottom: 6rem; } }
+  @media only screen and (max-width: 37.5em) {
+    main .info {
+      padding-top: 5rem;
+      padding-bottom: 5rem; } }
+  main .info::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/background-info.jpg);
+    background-size: cover;
+    -webkit-filter: brightness(15%);
+            filter: brightness(15%); }
+  main .info-heading {
+    position: relative;
+    font-size: 5em; }
+    @media only screen and (max-width: 56.25em) {
+      main .info-heading {
+        width: 90%;
+        font-size: 4em; } }
+    @media only screen and (max-width: 37.5em) {
+      main .info-heading {
+        width: 80%;
+        font-size: 3.4em; } }
+    main .info-heading::before {
+      display: inline-block;
+      content: '';
+      background-image: url("../img/spray-paint-gun(white).svg");
+      background-size: 28px 28px;
+      height: 28px;
+      width: 28px;
+      margin-right: 1rem; }
+      @media only screen and (max-width: 56.25em) {
+        main .info-heading::before {
+          background-size: 24px 24px;
+          height: 24px;
+          width: 24px; } }
+      @media only screen and (max-width: 37.5em) {
+        main .info-heading::before {
+          background-size: 20px 20px;
+          height: 20px;
+          width: 20px; } }
+  main .info-heading-after {
+    position: relative;
+    font-size: 1.2em;
+    padding-bottom: 3rem; }
+  main .info-heading-3 {
+    position: relative;
+    font-size: 3.2em;
+    padding-bottom: 2rem; }
+    @media only screen and (max-width: 37.5em) {
+      main .info-heading-3 {
+        font-size: 2.6em;
+        padding-bottom: 1.6rem; } }
+  main .info-text {
+    text-align: left;
+    position: relative;
+    width: 75%;
+    margin: 0 auto;
+    font-size: 2.4em;
+    line-height: 3.4rem;
+    padding-bottom: 4rem; }
+    @media only screen and (max-width: 56.25em) {
+      main .info-text {
+        font-size: 2em;
+        line-height: 3rem;
+        padding-bottom: 3.6rem;
+        width: 80%; } }
+    @media only screen and (max-width: 37.5em) {
+      main .info-text {
+        font-size: 1.8em;
+        line-height: 2.6rem;
+        padding-bottom: 3rem;
+        width: 80%; } }
+    main .info-text-link {
+      color: goldenrod; }
+      main .info-text-link:hover {
+        color: #ebc975; }
+  main .info-button {
+    position: relative;
+    font-size: 3rem; }
 
 main .partners {
   background-color: white; }
