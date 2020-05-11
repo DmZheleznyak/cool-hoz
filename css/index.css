@@ -69,8 +69,8 @@ $breakpoint argument choices:
   transition: all 1s; }
   .modal-window_button-close {
     position: absolute;
-    font-size: 1.6rem;
-    top: 1%;
+    font-size: 1.8rem;
+    top: 0%;
     right: 2%;
     cursor: pointer; }
   .modal-window .services-items_container {
@@ -89,15 +89,28 @@ $breakpoint argument choices:
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex; }
+      @media only screen and (max-width: 75em) {
+        .modal-window .services-items_container .services-item_container {
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: reverse;
+              -ms-flex-direction: column-reverse;
+                  flex-direction: column-reverse; } }
       .modal-window .services-items_container .services-item_container__slider {
         width: 70%;
-        margin: 2% 2%; }
+        margin: 4% 2%; }
+        @media only screen and (max-width: 75em) {
+          .modal-window .services-items_container .services-item_container__slider {
+            width: 80%;
+            margin: 0 auto; } }
         .modal-window .services-items_container .services-item_container__slider .slider-image {
           width: 90%;
           display: none;
           -webkit-box-shadow: 10px 10px 20px 0 rgba(94, 47, 59, 0.2);
                   box-shadow: 10px 10px 20px 0 rgba(94, 47, 59, 0.2);
           cursor: pointer; }
+          @media only screen and (max-width: 75em) {
+            .modal-window .services-items_container .services-item_container__slider .slider-image {
+              width: 100%; } }
           .modal-window .services-items_container .services-item_container__slider .slider-image.active {
             display: block;
             -webkit-animation: fadeImg 0.8s;
@@ -132,6 +145,14 @@ $breakpoint argument choices:
           -o-transition: transform 0.3s ease;
           transition: transform 0.3s ease;
           transition: transform 0.3s ease, -webkit-transform 0.3s ease; }
+          @media only screen and (max-width: 56.25em) {
+            .modal-window .services-items_container .services-item_container__slider .slider-nav button {
+              width: 10%;
+              font-size: 3.6em; } }
+          @media only screen and (max-width: 37.5em) {
+            .modal-window .services-items_container .services-item_container__slider .slider-nav button {
+              width: 14%;
+              font-size: 3.2em; } }
           .modal-window .services-items_container .services-item_container__slider .slider-nav button span {
             position: relative;
             display: inline-block;
@@ -154,17 +175,37 @@ $breakpoint argument choices:
                     transform: translateX(4px) scale(1.2);
             width: 7%; }
       .modal-window .services-items_container .services-item_container__text {
-        width: 30%; }
+        width: 30%;
+        margin: 4% 0; }
+        @media only screen and (max-width: 75em) {
+          .modal-window .services-items_container .services-item_container__text {
+            width: 80%;
+            margin: 5% auto; } }
         .modal-window .services-items_container .services-item_container__text h2 {
           font-size: 5em;
           padding: 10% 0;
           text-align: left; }
+          @media only screen and (max-width: 75em) {
+            .modal-window .services-items_container .services-item_container__text h2 {
+              text-align: center;
+              padding: 6% 0; } }
+          @media only screen and (max-width: 37.5em) {
+            .modal-window .services-items_container .services-item_container__text h2 {
+              font-size: 3.2em; } }
         .modal-window .services-items_container .services-item_container__text p {
           width: 85%;
           padding: 3% auto;
           text-align: left;
           font-size: 1.6em;
           line-height: 2em; }
+          @media only screen and (max-width: 56.25em) {
+            .modal-window .services-items_container .services-item_container__text p {
+              font-size: 1.5em;
+              line-height: 1.8em; } }
+          @media only screen and (max-width: 37.5em) {
+            .modal-window .services-items_container .services-item_container__text p {
+              font-size: 1.4em;
+              line-height: 1.6em; } }
 
 .slider-image {
   display: none; }
