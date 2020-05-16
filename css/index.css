@@ -210,6 +210,61 @@ $breakpoint argument choices:
 .slider-image {
   display: none; }
 
+.modal-window {
+  position: fixed;
+  left: 5%;
+  top: 5%;
+  width: 90%;
+  height: 90%;
+  z-index: 999;
+  background-color: #323232;
+  opacity: 1;
+  -webkit-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s; }
+  .modal-window_button-close {
+    position: absolute;
+    font-size: 1.8rem;
+    top: 0%;
+    right: 2%;
+    cursor: pointer; }
+  .modal-window .sertificates_container {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    height: 90%;
+    width: 96%;
+    background-color: white;
+    color: black;
+    overflow: scroll;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+    .modal-window .sertificates_container .sertificate_image {
+      display: block;
+      padding: 4% 0; }
+      @media only screen and (max-width: 56.25em) {
+        .modal-window .sertificates_container .sertificate_image img {
+          width: 70%;
+          margin: 0 auto; } }
+      @media only screen and (max-width: 37.5em) {
+        .modal-window .sertificates_container .sertificate_image img {
+          width: 80%;
+          margin: 0 auto; } }
+      .modal-window .sertificates_container .sertificate_image figcaption {
+        padding-top: 2%;
+        font-size: 1.4em; }
+
+.sertificate_image {
+  display: none; }
+
 main .main-image_container {
   position: relative;
   width: 100%;
@@ -422,7 +477,8 @@ main .services {
         color: #ebc975; }
   .info-button {
     position: relative;
-    font-size: 3rem; }
+    font-size: 3rem;
+    color: goldenrod; }
 
 .partners {
   background-color: white; }
