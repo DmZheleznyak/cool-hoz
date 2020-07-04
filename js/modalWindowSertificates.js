@@ -1,7 +1,7 @@
 function showModalWindowSertificates() {
 
-    var modalWindowSertificates = document.getElementById('modal-window_sertificates')
+    let modalWindowSertificates = document.getElementById('modal-window_sertificates');
 
-    modalWindowSertificates.classList.remove('modal-window-invisible')
-    modalWindowSertificates.classList.add('modal-window')
+    modalWindowSertificates.classList.remove('modal-window-invisible');
+    modalWindowSertificates.classList.add('modal-window');
 }

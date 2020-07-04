@@ -1,6 +1,11 @@
-function openPopup(event) {
-    const modalWindowServices = event.target.nextElementSibling
+const servicesItemButton = document.querySelectorAll('.services-item__button');
 
-    modalWindowServices.classList.remove('modal-window-invisible')
-    modalWindowServices.classList.add('modal-window')
+const openPopup = event => {
+    const modalWindow = event.target.nextElementSibling;
+    modalWindow.classList.remove('modal-window-invisible');
+    modalWindow.classList.add('modal-window');
 } 
+
+servicesItemButton.forEach(serviceItemButton => {
+    serviceItemButton.addEventListener('click', openPopup )
+})
